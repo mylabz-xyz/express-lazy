@@ -2,7 +2,7 @@
   "name": "@mylabz-xyz/express-lazy",
   "version": "1.0.0",
   "description": "Make express lazy !",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "dev": "tsc --watch",
     "build": "tsc"
