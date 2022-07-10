@@ -8,5 +8,6 @@ Features :
 - use cache system for data or logic
 - use cache system with configurable historic
 - provide store who any endpoint can access
-- provide options to use ram as cache, local or distant csv|txt file
+- provide options to use ram as cache
+- provide options to use large file (+40go) (handle file lines by lines)
 - ... ?

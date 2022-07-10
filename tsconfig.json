@@ -9,6 +9,6 @@
     "removeComments": true,
     "noLib": false,
   },
-  "include": ["**/*"],
+  "include": ["**/src/*"],
   "exclude": ["node_modules", "**/*.spec.ts"]
 }
