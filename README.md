@@ -19,9 +19,21 @@ Features :
 
 ## Benchmarking
 
+The `run.sh` script will use docker to pull czerasz/wrk-json image and run saved models of request from /scripts/*.lua. For more see [wrk Documentation](https://github.com/wg/wrk)
+
 ### Prerequisites
-- Make `run.sh` executable with `chmod u+x run.sh` or `sudo chmod u+x run.sh`
+- Make `./run.sh` executable with `chmod u+x ./run.sh` or `sudo chmod u+x ./run.sh`
 - [Docker](https://www.docker.com/)
 ### Usage
 
-- start `run.sh` script and specify your espress server `ip:host` with `server="ip:host"`
+
+- start `./run.sh` script you need to specify tester ip:port with host="", if no value the script will don't start. Exemple `./run.sh host="192.100.10.100:3000"  `
+- help with 'run.sh --h'
+ 
+### Options
+
+- **duration** with duration="" e.g. 2s, 2m, 2h. Default 1s
+- **number of threads** to use with threads="" . Default 1
+- **number of connections** to use with connections="" . Default 1
+- **LUA script** to use with script="" . Default /scripts/multi-request-json.lua
+- **requests file** to use with data_folder="" . Default /wrk/data
